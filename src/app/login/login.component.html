@@ -1,0 +1,59 @@
+<div class="p-5 text-center bg-image" style="
+      background-image: url('assets/nguyen-dang-hoang-nhu-qDgTQOYk6B8-unsplash.jpg');
+      height: 611px;
+      width: 100%;
+      margin-top: 0px;
+    ">
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-sm-3 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header" style="color:#fff;font-weight: bold;">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="offset-sm-1 col-sm-10">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-user" style="font-size: 1.5rem;"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" name="Username" [(ngModel)]="Username" placeholder="Username">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-row" style="margin-top: 15px;">
+                                <div class="offset-sm-1 col-sm-10">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-lock" style="font-size: 1.5rem;"></i></div>
+                                        </div>
+                                        <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-row" style="margin-top: 2px;">
+                                <div class="offset-sm-7 col-sm-4">
+                                    <h6 style="color: #fff;font-size: 12px; margin-left: 35px;">Forgot Password?
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="form-row" style="margin-top: 8px;">
+                                <div class="offset-sm-1 col-sm-10">
+                                    <a (click)="CheckUser()" class="buttonLogin" type="submit">LOGIN</a>>
+                                </div>
+                            </div>
+                            <h6 style="color: #fff; margin-top: -10px;font-size: 13px;">Do not have an account?
+                                <a routerLink="/register">Register</a>
+                            </h6>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
