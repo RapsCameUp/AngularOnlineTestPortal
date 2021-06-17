@@ -1,0 +1,9 @@
+#CriticalDiv:hover,
+#numericalDiv:hover {
+    opacity: 1;
+}
+
+.assessmentLink {
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,4 @@
+.lblAnswer:hover {
+    cursor: pointer;
+    background: rgb(85, 148, 148);
+}
