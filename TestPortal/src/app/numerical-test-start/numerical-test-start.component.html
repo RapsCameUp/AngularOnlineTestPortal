@@ -1,0 +1,35 @@
+<div class="p-5 text-center bg-image" style="
+      background-image: url('assets/nguyen-dang-hoang-nhu-qDgTQOYk6B8-unsplash.jpg');
+      height: 611px;
+      width: 100%;
+      margin-top: 0px;
+    ">
+
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center" style="height:300px;margin-top: 50px;">
+            <div class="text-white">
+                <div *ngIf="prev.length<11">
+                    <p class="text-center">Q: {{ prev.length }} of {{ questions.length }}</p>
+                    <h5>{{ questions[currentQuestion].question }}</h5>
+                    <div style="margin-top: 45px;display: grid;text-align: left;grid-template-columns: repeat(2, 1fr);">
+                        <ul class="list-group" style="list-style: none;" *ngFor="let question of questions[currentQuestion].answer">
+                            <label class="lblAnswer">
+                                <li class="list-group-item"
+                                    style="background: transparent;color:#fff;  border: 0.2px solid lightgray;">
+                                    <input type="checkbox" name="options"
+                                        (change)="AnalyseAndGetNext(question.correct)">
+                                    {{question.option}}
+                                </li>
+                            </label>
+                        </ul>
+                    </div>
+                </div>
+
+                <div *ngIf="prev.length>10">
+                    <h5> Correct Answers: {{ correctAns }} | Wrong Answers: {{ incorrectAns }}</h5>
+                    <h5>Result: {{ (correctAns/10)*100 }}%</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

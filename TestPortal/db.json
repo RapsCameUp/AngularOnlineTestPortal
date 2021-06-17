@@ -1,0 +1,17 @@
+{
+    "candidates": [{
+            "id": 1,
+            "password": "password",
+            "FullName": "Raps RER",
+            "Username": "RapsRER",
+            "Email": "Raps@raps.com"
+        },
+        {
+            "id": 2,
+            "password": "password",
+            "FullName": "Mighty RER",
+            "Username": "MightyRER",
+            "Email": "Mighty@raps.com"
+        }
+    ]
+}
